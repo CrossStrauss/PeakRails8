@@ -7,38 +7,80 @@
     --font-poppins: "Poppins", sans-serif; 
   
     /* Colours - General */
-    --color-grey-custom: oklch(0.9821 0 0);
-    --color-green-border: oklch(0.6664 0.1134 197.02);
-    --color-link-blue: oklch(0.6587 0.1607 247.79);
-    --color-light-grey: oklch(0.9215 0.0058 264.53);
-    --color-dark-grey: oklch(0.3523 0 0);
-    --color-accent-red: oklch(0.5968 0.2079 19.7);
-    --color-footer-grey-1: oklch(0.2875 0.0109 285.7);
-    --color-footer-grey-2: oklch(0.2611 0.0037 286.14);
-    --color-subtext-gray: oklch(0.6891 0.0063 264.52);
-    --color-background-grey: oklch(0.9431 0 0);
-    --color-background-dark-transparent: oklch(0 0 0 / 70.98%);
-    --color-light-blue-grey: oklch(0.9774 0.0042 236.5);
-    --color-white-light: oklch(0.86 0.0047 258.33);
-    
+    --color-btn-dark: oklch(0.1822 0 0);
+    --color-peak-red: oklch(0.6117 0.2289 24.66);
+    --color-grey-custom: oklch(0.9791 0 0);
 }
 
 body {
-    @apply text-dark-grey font-poppins;
+    @apply font-poppins;
 }
 
 @layer utilities {
-    .floating-label {
-      @apply absolute text-sm text-gray-500 
-             duration-300 transform -translate-y-4 scale-75 top-2 z-10 
-             origin-[0] bg-[#f4f6f8] px-2 peer-focus:px-1 
-             peer-placeholder-shown:scale-100 
-             peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 
-             peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4.5 
-             rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1 
-             peer-focus:bg-white peer-[&:not(:placeholder-shown)]:bg-white
-             peer-focus:translate-x-3 peer-[&:not(:placeholder-shown)]:translate-x-3
-             peer-[&:not(:placeholder-shown)]:-translate-y-4.5 peer-[&:not(:placeholder-shown)]:px-1;
+
+    .pod-container {
+        @apply w-[90%] mx-auto pt-30 
     }
+    .btn-dark-solid {
+        @apply border border-btn-dark bg-btn-dark text-white px-11 py-4 text-xl rounded-md
+    }
+
+    .btn-dark-solid:hover {
+        @apply border border-btn-dark px-11 py-4 text-xl rounded-md text-btn-dark bg-transparent
+    }
+
+    .btn-dark-outline {
+        @apply border border-btn-dark px-11 py-4 text-xl rounded-md text-btn-dark
+    }
+
+    .btn-dark-outline:hover {
+        @apply bg-btn-dark text-white px-11 py-4 text-xl rounded-md
+    }
+
+    .btn-peak-red-solid {
+        @apply border border-peak-red bg-peak-red text-white px-6 py-3 text-lg rounded-lg
+    }
+
+    .btn-peak-red-solid:hover {
+        @apply border border-peak-red bg-transparent text-btn-dark px-6 py-3 text-lg rounded-lg
+    }
+
+    .red-accent-pill {
+        @apply bg-peak-red py-[2px] w-[20px] rounded-md
+    }
+
+    .red-accent-pill-large {
+        @apply bg-peak-red py-[3px] w-[50px] rounded-md
+    }
+
+    .product-label {
+        @apply px-5 mt-3 text-lg font-medium leading-5
+    }
+
+    .product-price {
+        @apply px-5 mt-3 text-3xl font-light
+    }
+
+    .floating-label {
+        @apply absolute text-sm text-gray-500 
+               duration-300 transform -translate-y-4 scale-75 top-2 z-10 
+               origin-[0] bg-[#ffffff] px-2 peer-focus:px-1 
+               peer-placeholder-shown:scale-100 
+               peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 
+               peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4.5 
+               rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1 
+               peer-focus:bg-white peer-[&:not(:placeholder-shown)]:bg-white
+               peer-focus:translate-x-3 peer-[&:not(:placeholder-shown)]:translate-x-3
+               peer-[&:not(:placeholder-shown)]:-translate-y-4.5 peer-[&:not(:placeholder-shown)]:px-1;
+    }
+    
+    .md-input-styling {
+        @apply block bg-[#ffffff] px-2.5 pb-2.5 
+               pt-4 w-full text-sm text-gray-900 rounded-xl 
+               border-1 border-transparent appearance-none focus:outline-none 
+               focus:ring-0 focus:border-gray-200 focus:bg-white
+               [&:not(:placeholder-shown)]:bg-white [&:not(:placeholder-shown)]:border-gray-200;
+    }
+    
 }
   
