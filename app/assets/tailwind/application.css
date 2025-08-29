@@ -10,6 +10,7 @@
     --color-btn-dark: oklch(0.1822 0 0);
     --color-peak-red: oklch(0.6117 0.2289 24.66);
     --color-grey-custom: oklch(0.9791 0 0);
+    --color-dark-custom: oklch(0.1822 0 0);
 }
 
 body {
@@ -19,7 +20,11 @@ body {
 @layer utilities {
 
     .pod-container {
-        @apply w-[90%] mx-auto pt-30 
+        @apply w-[90%] mx-auto pt-10 lg:pt-30
+    }
+
+    .footer-container {
+        @apply w-[90%] mx-auto pt-10 pb-20
     }
     .btn-dark-solid {
         @apply border border-btn-dark bg-btn-dark text-white px-11 py-4 text-xl rounded-md
