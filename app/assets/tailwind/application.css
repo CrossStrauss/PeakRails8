@@ -62,6 +62,14 @@ body {
         @apply bg-btn-dark text-white px-3 py-1 text-base rounded-md
     }
 
+    .btn-grey-light {
+        @apply border border-grey-custom bg-grey-custom px-3 rounded-xl
+    }
+
+    .btn-grey-light:hover {
+        @apply border border-dark-custom bg-dark-custom px-3 rounded-xl
+    }
+
     .red-accent-pill {
         @apply bg-peak-red py-[2px] w-[20px] rounded-md
     }
@@ -78,8 +86,13 @@ body {
         @apply px-5 mt-3 text-3xl font-light
     }
 
+    .product-price-large {
+        @apply mt-3 text-4xl font-light
+    }
+        
+
     .product-price-small {
-            @apply px-5 mt-3 text-xl font-light
+        @apply px-5 mt-3 text-xl font-light
     }
 
     .floating-label {
