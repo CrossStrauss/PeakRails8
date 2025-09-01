@@ -86,6 +86,10 @@ body {
                focus:ring-0 focus:border-gray-200 focus:bg-white
                [&:not(:placeholder-shown)]:bg-white [&:not(:placeholder-shown)]:border-gray-200;
     }
+
+    .nav-link-styling {
+        @apply block py-2 px-3 font-light
+    }
     
 }
   
