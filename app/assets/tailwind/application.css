@@ -50,6 +50,18 @@ body {
         @apply border border-peak-red bg-transparent text-btn-dark px-6 py-3 text-lg rounded-lg
     }
 
+    .btn-filter{
+        @apply border border-btn-dark px-3 py-1 text-base rounded-md text-btn-dark
+    }
+
+    .btn-filter:hover{
+        @apply bg-btn-dark text-white px-3 py-1 text-base rounded-md
+    }
+
+    .btn-filter.active{
+        @apply bg-btn-dark text-white px-3 py-1 text-base rounded-md
+    }
+
     .red-accent-pill {
         @apply bg-peak-red py-[2px] w-[20px] rounded-md
     }
@@ -93,6 +105,14 @@ body {
 
     .nav-link-styling {
         @apply block py-2 px-3 font-light
+    }
+
+    .filter-hidden {
+        @apply h-[0px] overflow-hidden duration-300
+    }
+
+    .filter-show {
+        @apply pt-10 duration-300
     }
     
 }
