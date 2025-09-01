@@ -31,7 +31,7 @@ body {
     }
 
     .btn-dark-solid:hover {
-        @apply border border-btn-dark px-11 py-4 text-xl rounded-md text-btn-dark bg-transparent
+        @apply border border-btn-dark px-11 py-4 text-xl rounded-md text-btn-dark bg-white
     }
 
     .btn-dark-outline {

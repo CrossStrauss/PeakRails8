@@ -1,0 +1,24 @@
+<div class="lg:h-[100vh] relative flex justify-center items-center flex-col lg:flex-row pt-30 lg:pt-0">
+    <div class="w-full h-full lg:absolute">
+        <%= image_tag 'banner_red.jpg', class: "object-contain h-full w-full lg:object-cover" %>
+    </div>
+    <div class="absolute w-[50%] bottom-[10%]">
+        <%= image_tag 'peak.png'%>
+    </div>
+
+    <div class="lg:w-[90%] bottom-0 py-4 hidden lg:flex justify-between lg:absolute bottom-0">
+        <div>
+            <button type="button" class="btn-dark-solid">Shop Now</button>
+        </div>
+
+        <div class="px-10 py-3 text-white text-2xl">
+            Scroll to Explore
+        </div>
+    </div>
+</div>
+
+<div class="w-full bottom-0 pt-10 flex lg:hidden justify-center items-center lg:absolute bottom-0 flex-col">
+    <div>
+        <button type="button" class="btn-dark-solid">Shop Now</button>
+    </div>
+</div>
