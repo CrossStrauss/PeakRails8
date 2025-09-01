@@ -2,9 +2,45 @@
 
 <%= render 'pods/banner_large_pod' %>
 <%= render 'pods/four_cards_pod' %>
-<%= render 'pods/lifestyle_image_product_left_pod' %>
-<%= render 'pods/lifestyle_image_product_right_pod' %>
-<%= render 'pods/content_left_image_pod' %>
+<%= render 'pods/lifestyle_image_left_four_prod_pod' %>
+<%= render 'pods/lifestyle_image_right_four_prod_pod' %>
+<%= render 'pods/content_left_image_four_card_pod' %>
 <%= render 'pods/join_the_family_pod' %>
 
+-<div>
+<style>
+.text-dark {
+color: #000000}
+.bg-light {
+        background-color: #f8f9fa;
+        }
+
+    .police-tape {
+    width: 100%; 
+    padding: 10px 0;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    background: repeating-linear-gradient(
+        -45deg,
+        yellow,
+        yellow 20px,
+        black 20px,
+        black 40px
+    );
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 18px;
+    }
+</style>
+
+<div class="police-tape my-5">
+  <span class="text-dark bg-light p-2 rounded-3">— Next Page —</span>
+</div>
+</div>
+<%= render 'pods/two_card_pod'%>
+<%= render 'pods/lifestyle_image_left_six_prod_pod' %>
+<%= render 'pods/lifestyle_image_right_six_prod_pod' %>
+<%= render 'pods/content_left_image_two_card_pod' %>
 <%= render 'shared/footer' %>

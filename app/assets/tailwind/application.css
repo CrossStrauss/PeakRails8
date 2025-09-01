@@ -35,11 +35,11 @@ body {
     }
 
     .btn-dark-outline {
-        @apply border border-btn-dark px-11 py-4 text-xl rounded-md text-btn-dark
+        @apply border border-btn-dark px-9 py-3 text-base rounded-md text-btn-dark
     }
 
     .btn-dark-outline:hover {
-        @apply bg-btn-dark text-white px-11 py-4 text-xl rounded-md
+        @apply bg-btn-dark text-white px-9 py-3 text-base rounded-md
     }
 
     .btn-peak-red-solid {
@@ -64,6 +64,10 @@ body {
 
     .product-price {
         @apply px-5 mt-3 text-3xl font-light
+    }
+
+    .product-price-small {
+            @apply px-5 mt-3 text-xl font-light
     }
 
     .floating-label {
