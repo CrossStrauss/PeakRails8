@@ -127,6 +127,14 @@ body {
     .filter-show {
         @apply pt-10 duration-300
     }
+
+    .at-top {
+        @apply bg-transparent transition duration-300 ease-in-out
+    }
+
+    .scrolled {
+        @apply bg-white transition duration-300 ease-in-out
+    }
     
 }
   
