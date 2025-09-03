@@ -11,6 +11,8 @@
     --color-peak-red: oklch(0.6117 0.2289 24.66);
     --color-grey-custom: oklch(0.9791 0 0);
     --color-dark-custom: oklch(0.1822 0 0);
+    --color-dark-grey: oklch(0.6797 0 0);
+    --color-subtext-grey: oklch(0.7763 0 0);
 }
 
 body {
@@ -21,6 +23,10 @@ body {
 
     .pod-container {
         @apply w-[90%] mx-auto pt-10 lg:pt-30
+    }
+
+    .checkout-container {
+        @apply w-[90%] lg:w-[80%] mx-auto pt-10 lg:py-30
     }
 
     .footer-container {
@@ -34,12 +40,36 @@ body {
         @apply border border-btn-dark px-11 py-4 text-xl rounded-md text-btn-dark bg-white
     }
 
+    .btn-checkout-solid {
+        @apply border border-btn-dark bg-btn-dark w-full text-white h-[45px] text-[14px] rounded-md
+    }
+
+    .btn-checkout-solid:hover {
+        @apply border border-btn-dark w-full h-[45px] text-[14px] rounded-md text-btn-dark bg-white
+    }
+
     .btn-dark-outline {
         @apply border border-btn-dark px-9 py-3 text-base rounded-md text-btn-dark
     }
 
     .btn-dark-outline:hover {
         @apply bg-btn-dark text-white px-9 py-3 text-base rounded-md
+    }
+
+    .btn-peak-checkout-red-solid {
+        @apply border border-peak-red bg-peak-red text-white h-[45px] text-[14px] rounded-lg
+    }
+
+    .btn-peak-checkout-red-solid:hover {
+        @apply border border-peak-red bg-transparent text-btn-dark h-[45px] text-[14px] rounded-lg
+    }
+
+    .btn-dark-checkout-outline {
+        @apply border border-btn-dark h-[45px] text-[14px] rounded-md text-btn-dark
+    }
+
+    .btn-dark-checkout-outline:hover {
+        @apply bg-btn-dark text-white h-[45px] text-[14px] rounded-md
     }
 
     .btn-peak-red-solid {
@@ -135,6 +165,18 @@ body {
     .scrolled {
         @apply bg-white transition duration-300 ease-in-out
     }
+
+    .th-styling {
+        @apply font-medium px-3 pb-2
+    }
+
+    .td-styling {
+        @apply text-dark-grey px-3
+    }
     
+    .shipping-text-styling {
+        @apply text-sm pb-4
+    }
+
 }
   
