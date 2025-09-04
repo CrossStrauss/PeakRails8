@@ -41,6 +41,10 @@ body {
         @apply w-[90%] lg:w-[65%] mx-auto pt-10 lg:py-30
     }
 
+    hr {
+        @apply opacity-20
+    }
+
     /* Buttons */
 
     .btn-dark-solid {
