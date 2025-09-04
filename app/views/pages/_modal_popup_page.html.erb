@@ -1,9 +1,9 @@
 <div class="flex justify-center py-30" >
     <button data-action="click->modal#openCustomModal" class="btn-checkout-solid !w-[40%] lg:!w-[10%]">Log In</button>
 
-    <div id="modal" data-modal-target="modal"  class="fixed modal inset-0 flex items-center justify-center bg-gray-500/75 opacity-0 pointer-events-none transition-opacity duration-300">
+    <div id="modal" data-modal-target="modal"  class="fixed modal inset-0 flex items-center justify-center bg-gray-500/75 opacity-0 pointer-events-none transition-opacity duration-300 z-[9999]">
         <div class="relative w-full h-full flex justify-center items-center">
-            <div id="panel" data-modal-target="panel" class="bg-white rounded-2xl p-8 customModalPanel mx-auto w-[95%] lg:w-[33%] lg:h-[50vh] z-100">
+            <div id="panel" data-modal-target="panel" class="bg-white rounded-2xl p-8 customModalPanel mx-auto w-[95%] lg:w-[33%] lg:h-[50vh] z-[9999]">
                 <form>
                     <div class="grid grid-cols-2 ">
                         <div class="flex justify-between col-span-2">
@@ -29,7 +29,7 @@
                             <input  type="password" 
                                     data-password-show-target="input"
                                     id="login_password" 
-                                    class="md-input-styling peer" 
+                                    class="md-input-styling peer border border-dark-custom h-[45px] !rounded-lg" 
                                     placeholder=" " />
                             
                             <label for="login_password" class="floating-label">
@@ -75,7 +75,7 @@
                     </div>
                 </form>
             </div>
-            <div class="absolute w-full h-full z-90 top-0" data-action="click->modal#closeCustomModal"></div>
+            <div class="absolute w-full h-full z-[9998] top-0" data-action="click->modal#closeCustomModal"></div>
         </div>
     </div>
 </div>
