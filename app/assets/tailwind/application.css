@@ -13,6 +13,8 @@
     --color-dark-custom: oklch(0.1822 0 0);
     --color-dark-grey: oklch(0.6797 0 0);
     --color-subtext-grey: oklch(0.7763 0 0);
+    --color-blue-dark: oklch(0.6321 0.2018 254.09);
+    --color-blue-light: oklch(0.9504 0.0254 244.42);
 }
 
 body {
@@ -20,6 +22,8 @@ body {
 }
 
 @layer utilities {
+
+    /* Structural */
 
     .pod-container {
         @apply w-[90%] mx-auto pt-10 lg:pt-30
@@ -32,6 +36,9 @@ body {
     .footer-container {
         @apply w-[90%] mx-auto pt-10 pb-20
     }
+
+    /* Buttons */
+
     .btn-dark-solid {
         @apply border border-btn-dark bg-btn-dark text-white px-11 py-4 text-xl rounded-md
     }
@@ -41,11 +48,11 @@ body {
     }
 
     .btn-checkout-solid {
-        @apply border border-btn-dark bg-btn-dark w-full text-white h-[45px] text-[14px] rounded-md
+        @apply border border-btn-dark bg-btn-dark w-full text-white h-[45px] text-[16px] rounded-md
     }
 
     .btn-checkout-solid:hover {
-        @apply border border-btn-dark w-full h-[45px] text-[14px] rounded-md text-btn-dark bg-white
+        @apply border border-btn-dark w-full h-[45px] text-[16px] rounded-md text-btn-dark bg-white
     }
 
     .btn-dark-outline {
@@ -57,19 +64,19 @@ body {
     }
 
     .btn-peak-checkout-red-solid {
-        @apply border border-peak-red bg-peak-red text-white h-[45px] text-[14px] rounded-lg
+        @apply border border-peak-red bg-peak-red text-white h-[45px] text-[16px] rounded-lg
     }
 
     .btn-peak-checkout-red-solid:hover {
-        @apply border border-peak-red bg-transparent text-btn-dark h-[45px] text-[14px] rounded-lg
+        @apply border border-peak-red bg-transparent text-btn-dark h-[45px] text-[16px] rounded-lg
     }
 
     .btn-dark-checkout-outline {
-        @apply border border-btn-dark h-[45px] text-[14px] rounded-md text-btn-dark
+        @apply border border-btn-dark h-[45px] text-[16px] rounded-md text-btn-dark
     }
 
     .btn-dark-checkout-outline:hover {
-        @apply bg-btn-dark text-white h-[45px] text-[14px] rounded-md
+        @apply bg-btn-dark text-white h-[45px] text-[16px] rounded-md
     }
 
     .btn-peak-red-solid {
@@ -100,6 +107,8 @@ body {
         @apply border border-dark-custom bg-dark-custom px-3 rounded-xl
     }
 
+    /* Stylistic Elements */
+
     .red-accent-pill {
         @apply bg-peak-red py-[2px] w-[20px] rounded-md
     }
@@ -107,6 +116,8 @@ body {
     .red-accent-pill-large {
         @apply bg-peak-red py-[3px] w-[50px] rounded-md
     }
+
+    /* Text Stylings */
 
     .product-label {
         @apply px-5 mt-3 text-lg font-medium leading-5
@@ -120,10 +131,27 @@ body {
         @apply mt-3 text-4xl font-light
     }
         
-
     .product-price-small {
         @apply px-5 mt-3 text-xl font-light
     }
+
+    .th-styling {
+        @apply font-medium px-3 pb-2
+    }
+
+    .td-styling {
+        @apply text-dark-grey px-3
+    }
+    
+    .shipping-text-styling {
+        @apply text-sm pb-4
+    }
+
+    .pod-page-title {
+        @apply uppercase text-[30px] text-center lg:text-[55px] font-semibold mb-4 w-full lg:leading-18
+    }
+
+    /* Input Elements */
 
     .floating-label {
         @apply absolute text-sm text-gray-500 
@@ -141,14 +169,29 @@ body {
     .md-input-styling {
         @apply block bg-[#ffffff] px-2.5 pb-2.5 
                pt-4 w-full text-sm text-gray-900 rounded-xl 
-               border-1 border-transparent appearance-none focus:outline-none 
-               focus:ring-0 focus:border-gray-200 focus:bg-white
-               [&:not(:placeholder-shown)]:bg-white [&:not(:placeholder-shown)]:border-gray-200;
+               border-1 border-dark-grey appearance-none focus:outline-none 
+               focus:ring-0 focus:border-dark-grey focus:bg-white
+               [&:not(:placeholder-shown)]:bg-white [&:not(:placeholder-shown)]:border-dark-grey;
     }
 
     .nav-link-styling {
         @apply block py-2 px-3 font-light
     }
+
+    .custom-radio-buttons {
+        @apply absolute h-full w-full rounded-lg border-1 border-blue-light top-0 z-0 peer-checked:bg-blue-light
+    }
+
+    .custom-radio-label {
+        @apply w-full h-full flex items-center text-sm font-medium text-base col-span-9 z-10 relative
+    }
+
+    .radio_styling {
+        @apply border-blue-dark rounded-xl text-blue-dark focus:ring-blue-light
+                checked:border-blue-dark w-5 h-5 bg-size-[1.5em] mx-3 my-2
+    }
+
+    /* Stimulus Classes */
 
     .filter-hidden {
         @apply h-[0px] overflow-hidden duration-300
@@ -166,17 +209,23 @@ body {
         @apply bg-white transition duration-300 ease-in-out
     }
 
-    .th-styling {
-        @apply font-medium px-3 pb-2
+    .customModal {
+        @apply opacity-0 transition-opacity duration-300 pointer-events-none
     }
 
-    .td-styling {
-        @apply text-dark-grey px-3
+    .customModalPanel {
+        @apply opacity-0 scale-95 transition-all duration-300
     }
-    
-    .shipping-text-styling {
-        @apply text-sm pb-4
+
+    .modal.show {
+        @apply !opacity-100 !pointer-events-auto
     }
+
+    .customModalPanel.show {
+        @apply !opacity-100 scale-95 transition-all duration-300
+    }
+
+   
 
 }
   

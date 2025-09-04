@@ -1,0 +1,81 @@
+<div class="flex justify-center py-30" >
+    <button data-action="click->modal#openCustomModal" class="btn-checkout-solid !w-[40%] lg:!w-[10%]">Log In</button>
+
+    <div id="modal" data-modal-target="modal"  class="fixed modal inset-0 flex items-center justify-center bg-gray-500/75 opacity-0 pointer-events-none transition-opacity duration-300">
+        <div class="relative w-full h-full flex justify-center items-center">
+            <div id="panel" data-modal-target="panel" class="bg-white rounded-2xl p-8 customModalPanel mx-auto w-[95%] lg:w-[33%] lg:h-[50vh] z-100">
+                <form>
+                    <div class="grid grid-cols-2 ">
+                        <div class="flex justify-between col-span-2">
+                            <p class="text-xl lg:text-2xl font-medium">
+                                Login
+                            </p>
+
+                            <button class=" lg:hidden" data-action="click->modal#closeCustomModal">
+                                <i class="fa-solid fa-x text-[20px]"></i>
+                            </button>
+                        </div>
+                        
+                        <hr class="col-span-2 mt-3 mb-5">
+                        <div class="relative 1 h-[45px] mt-5 col-span-2">
+                            <input type="text" id="login_email" class="md-input-styling peer border border-dark-custom h-[45px] !rounded-lg" placeholder=" ">
+                            
+                            <label for="login_email" class="floating-label">
+                                Email Address
+                            </label>
+                        </div>
+
+                        <div class="relative col-span-2 mt-5" data-controller="password-show">
+                            <input  type="password" 
+                                    data-password-show-target="input"
+                                    id="login_password" 
+                                    class="md-input-styling peer" 
+                                    placeholder=" " />
+                            
+                            <label for="login_password" class="floating-label">
+                                Password
+                            </label>
+
+                            <button 
+                                type="button" 
+                                data-password-show="toggle"
+                                data-action="click->password-show#toggle"
+                                class="absolute right-3 top-1/2 transform -translate-y-1/2 text-sm text-gray-500"
+                            >
+                                <i data-password-show-target="icon" class="fa fa-eye-slash"></i>
+                            </button>
+                        </div> 
+
+                        <div class="col-span-2 mt-5 text-blue-dark flex justify-end">
+                            <a class="text-end" href="#">
+                                Forgot Password?
+                            </a>
+                        </div>
+
+                        <div class="col-span-2 mt-5">
+                            <button type="button" class="btn-peak-checkout-red-solid rounded-xl md:me-3 h-12 flex items-center w-full mt-5 lg:mt-0 order-4 lg:order-3 flex justify-evenly">
+                               Login
+                            </button>
+                        </div>
+
+                        <hr class="col-span-2 mt-8 mb-5">
+
+                        <div class="col-span-2 lg:col-span-1 mt-6">
+                            <button type="button" class="btn-dark-checkout-outline rounded-xl md:me-3 h-12 flex items-center w-full lg:mt-0 order-4 lg:order-3 lg:me-3 flex justify-center">
+                                New to Peak? Register
+                            </button>
+                        </div>
+
+                        <div class="col-span-2 lg:col-span-1 mt-6">
+                            <button type="button" class="btn-checkout-solid lg:ms-3 flex justify-center items-center">
+                                Continue as Guest
+                            </button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+            <div class="absolute w-full h-full z-90 top-0" data-action="click->modal#closeCustomModal"></div>
+        </div>
+    </div>
+</div>

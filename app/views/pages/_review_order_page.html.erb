@@ -1,6 +1,6 @@
 <div class="w-[90%] lg:w-[65%] mx-auto pt-10 lg:py-30">
     <div class="pb-10 flex items-center flex-col">
-        <h2 class="uppercase text-[30px] text-center lg:text-[55px] font-semibold mb-4 w-full lg:leading-18">
+        <h2 class="uppercase pod-page-title">
             Review My order
         </h2>
         <div class="red-accent-pill-large"></div>
@@ -79,9 +79,15 @@
                 </p>
                 <div class="grid grid-cols-4">
                     <hr class="col-span-4 mt-3">
-                    <div class="flex flex-row mt-6 col-span-3">
-                        <input type="text" id="search-navbar" class="h-[45px] block w-full me-5 p-2 ps-10 text-sm text-dark border border-dark rounded-lg bg-white " placeholder="Enter Code">
+                    <div class="relative col-span-3 h-[45px] mt-6 pe-3">
+                        <input  type="text" 
+                                id="coupon_code" 
+                                class="md-input-styling peer border border-dark-custom h-[45px] !rounded-lg" 
+                                placeholder=" " />
                         
+                        <label for="coupon_code" class="floating-label">
+                            Contact Relationship
+                        </label>
                     </div>
                     <div class="col-span-1 mt-6">
                         <button type="button" class="btn-checkout-solid">
