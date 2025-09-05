@@ -200,6 +200,18 @@ body {
         @apply w-full max-h-[500px] object-cover
     }
 
+    .static-content-styling h2 {
+        @apply pt-5 text-3xl
+    }
+
+    .static-content-styling p {
+        @apply pt-5
+    }
+
+    .static-content-styling img {
+        @apply w-full max-h-[500px] object-cover
+    }
+
     /* Input Elements */
 
     .floating-label {
@@ -221,6 +233,27 @@ body {
                border-1 border-dark-grey appearance-none focus:outline-none 
                focus:ring-0 focus:border-dark-grey focus:bg-white
                [&:not(:placeholder-shown)]:bg-white [&:not(:placeholder-shown)]:border-dark-grey;
+    }
+
+    .floating-label-textarea {
+        @apply absolute text-sm text-gray-500 
+            duration-300 transform -translate-y-4 scale-75 top-2 z-10 
+            origin-[0] bg-white px-2 peer-focus:px-1 
+            peer-placeholder-shown:scale-100 
+            peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-[20px] 
+            peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4.5 
+            rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1 
+            peer-focus:bg-white peer-[&:not(:placeholder-shown)]:bg-white
+            peer-focus:translate-x-3 peer-[&:not(:placeholder-shown)]:translate-x-3
+            peer-[&:not(:placeholder-shown)]:-translate-y-4.5 peer-[&:not(:placeholder-shown)]:px-1;
+    }
+
+    .md-input-styling-textarea {
+        @apply block bg-[#f4f6f8] px-2.5 pb-2.5 
+            pt-4 w-full text-sm text-gray-900 rounded-2xl 
+            border-1 border-transparent appearance-none focus:outline-none 
+            focus:ring-0 focus:border-gray-200 focus:bg-white
+            [&:not(:placeholder-shown)]:bg-white [&:not(:placeholder-shown)]:border-gray-200;
     }
 
     .nav-link-styling {
