@@ -9,7 +9,7 @@ export default class extends Controller {
 
   connect() {
     console.log("Modal controller connected");
-    this.modalTarget.addEventListener("openCustomModal", this.openCustomModal);
+    this.modalTarget.addEventListener("openCustomModal", this.triggerCustomModal);
   }
 
   disconnect() {

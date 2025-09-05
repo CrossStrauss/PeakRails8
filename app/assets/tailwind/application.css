@@ -15,6 +15,7 @@
     --color-subtext-grey: oklch(0.7763 0 0);
     --color-blue-dark: oklch(0.6321 0.2018 254.09);
     --color-blue-light: oklch(0.9504 0.0254 244.42);
+    --color-filter-active: oklch(0.6117 0.2289 24.66); 
 }
 
 body {
@@ -76,11 +77,11 @@ body {
     }
 
     .btn-peak-checkout-red-solid:hover {
-        @apply border border-peak-red bg-transparent text-btn-dark h-[45px] text-[16px] rounded-lg
+        @apply border border-peak-red bg-white text-btn-dark h-[45px] text-[16px] rounded-lg
     }
 
     .btn-dark-checkout-outline {
-        @apply border border-btn-dark h-[45px] text-[16px] rounded-md text-btn-dark
+        @apply border bg-white border-btn-dark h-[45px] text-[16px] rounded-md text-btn-dark
     }
 
     .btn-dark-checkout-outline:hover {
@@ -115,6 +116,26 @@ body {
         @apply border border-dark-custom bg-dark-custom px-3 rounded-xl
     }
 
+    .filter-size-selection-styling {
+        @apply font-semibold border-1 border-dark-custom size-[40px] flex justify-center items-center transition duration-200 cursor-pointer
+    }
+
+    .filter-size-selection-styling.active {
+        @apply bg-filter-active text-white border border-filter-active size-[40px] flex justify-center items-center transition duration-200 cursor-pointer
+    }
+
+     .filter-color-selection-styling {
+        @apply font-semibold border-1 border-dark-custom size-[40px] flex justify-center items-center transition duration-200 cursor-pointer
+    }
+
+    .filter-color-selection-styling.active {
+        @apply text-white border border-filter-active size-[40px] flex justify-center items-center transition duration-200 cursor-pointer
+    }
+
+    .accordion-button-styling {
+        @apply flex items-center justify-between w-full px-5 pb-3 pt-3 font-medium rtl:text-right bg-transparent
+    }
+
     /* Stylistic Elements */
 
     .red-accent-pill {
@@ -123,6 +144,14 @@ body {
 
     .red-accent-pill-large {
         @apply bg-peak-red py-[3px] w-[50px] rounded-md
+    }
+
+    .tag-selector-styling {
+        @apply px-2 py-1 me-1 mt-1 bg-dark-custom text-white text-xs
+    }
+
+    .tag-selector-styling.active {
+        @apply px-2 py-1 me-1 mt-1 bg-peak-red text-white text-xs
     }
 
     /* Text Stylings */
@@ -157,6 +186,18 @@ body {
 
     .pod-page-title {
         @apply uppercase text-[30px] text-center lg:text-[55px] font-semibold mb-4 w-full lg:leading-18
+    }
+
+    .blog-content-styling h2 {
+        @apply pt-5 text-3xl
+    }
+
+    .blog-content-styling p {
+        @apply pt-5
+    }
+
+    .blog-content-styling img {
+        @apply w-full max-h-[500px] object-cover
     }
 
     /* Input Elements */
@@ -206,7 +247,7 @@ body {
     }
 
     .filter-show {
-        @apply pt-10 duration-300
+        @apply pt-6 lg:pt-10 duration-300
     }
 
     .at-top {

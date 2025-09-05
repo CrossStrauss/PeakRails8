@@ -13,17 +13,80 @@
             </button>
         </div>
         <div class="flex flex-row w-full filter-hidden" data-filter-toggle-target="filterBox">
-            <a href="#" class="px-3">
-                Filter 1
-            </a>
+            <div class="grid grid-cols-10 w-full">
+                <div class="col-span-10 lg:col-span-3">
+                    <div>
+                        <p class="text-xl">
+                            Size(UK)
+                        </p>
+                    </div>
+                    <div class="flex lg:mt-3 flex-wrap">
 
-             <a href="#" class="px-3">
-                Filter 2
-            </a>
+                        <div class="relative me-2 mt-2 lg:mt-0">
+                            <input class="peer ring-transparent filter-size-selection-styling bg-transparent ring-transparent" type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                            <div class="absolute peer-checked:bg-filter-active peer-checked:text-white text-black w-full h-full top-0 flex justify-center items-center pointer-events-none ">
+                                <p class="font-semibold">3</p>
+                            </div>
+                        </div>
 
-             <a href="#" class="px-3">
-                Filter 3
-            </a>
+                        <div class="relative me-2 mt-2 lg:mt-0">
+                            <input class="peer ring-transparent filter-size-selection-styling bg-transparent ring-transparent" type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                            <div class="absolute peer-checked:bg-filter-active peer-checked:text-white text-black w-full h-full top-0 flex justify-center items-center pointer-events-none ">
+                                <p class="font-semibold">3.5</p>
+                            </div>
+                        </div>
+
+                        <div class="relative me-2 mt-2 lg:mt-0">
+                            <input class="peer ring-transparent filter-size-selection-styling bg-transparent ring-transparent" type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                            <div class="absolute peer-checked:bg-filter-active peer-checked:text-white text-black w-full h-full top-0 flex justify-center items-center pointer-events-none ">
+                                <p class="font-semibold">4</p>
+                            </div>
+                        </div>
+
+                        <div class="relative me-2 mt-2 lg:mt-0">
+                            <input class="peer ring-transparent filter-size-selection-styling bg-transparent ring-transparent" type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                            <div class="absolute peer-checked:bg-filter-active peer-checked:text-white text-black w-full h-full top-0 flex justify-center items-center pointer-events-none ">
+                                <p class="font-semibold">4.5</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="hidden lg:block col-span-4"></div>
+                <div class="col-span-10 lg:col-span-3 mt-3 lg:mt-0">
+                    <div>
+                        <p class="text-xl">
+                            Colors
+                        </p>
+                    </div>
+                    <div class="flex lg:mt-3 flex-wrap">
+
+                        <div class="relative me-2 mt-2 lg:mt-0">
+                            <input class="peer ring-transparent filter-color-selection-styling bg-[#345678] ring-transparent" type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                            <div class="absolute hidden peer-checked:flex peer-checked:text-white w-full h-full top-0 flex justify-center items-center pointer-events-none bg-[#345678]">
+                                <p class="font-semibold">X</p>
+                            </div>
+                        </div>
+
+                        <div class="relative me-2 mt-2 lg:mt-0">
+                            <input class="peer ring-transparent filter-color-selection-styling bg-peak-red ring-transparent" type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                            <div class="absolute hidden peer-checked:flex w-full h-full top-0 flex justify-center items-center pointer-events-none bg-peak-red">
+                                <p class="text-white font-semibold">X</p>
+                            </div>
+                        </div>
+
+                        <div class="relative me-2 mt-2 lg:mt-0">
+                            <input class="peer ring-transparent filter-color-selection-styling bg-blue-dark ring-transparent" type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                            <div class="absolute hidden peer-checked:flex w-full h-full top-0 flex justify-center items-center pointer-events-none bg-blue-dark">
+                                <p class="text-white font-semibold">X</p>
+                            </div>
+                        </div>
+                        
+
+                    </div>
+                </div>
+            </div>
+            
         </div>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7">
