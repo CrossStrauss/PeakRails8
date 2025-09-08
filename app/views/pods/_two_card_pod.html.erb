@@ -1,8 +1,8 @@
-<div class="pod-container">
+<div class="pod-container" data-controller="parrallax">
     <div class="grid grid-cols-2 gap-7">
         <a href="#" class="col-span-2 lg:col-span-1">
             <div class="rounded-2xl overflow-hidden w-full relative">
-                <%= image_tag 'bg_bubble_orange.jpg'%>
+                <%= image_tag 'bg_bubble_orange.jpg', class: 'parallax-image scale-140' %>
                 <%= image_tag 'runner_man_transparent.png', class: 'absolute bottom-0' %>
             </div>
             <p class="text-xl lg:text-3xl mt-3 font-medium">
@@ -13,7 +13,7 @@
 
         <a href="#" class="col-span-2 lg:col-span-1">
             <div class="rounded-2xl overflow-hidden w-full relative">
-                <%= image_tag 'bg_bubble_blue.jpg'%>
+                <%= image_tag 'bg_bubble_blue.jpg', class: 'parallax-image scale-140' %>
                 <%= image_tag 'runner_women_transparent.png', class: 'absolute bottom-0' %>
             </div>
             <p class="text-xl lg:text-3xl mt-3 font-medium">
