@@ -1,0 +1,66 @@
+<div class="page-container lg:h-screen">
+    <div class="pb-10 flex items-center flex-col">
+        <h2 class="pod-page-title !mb-0">
+            Contact Us
+        </h2>
+        <div class="red-accent-pill-large"></div>
+    </div>
+    <div class="bg-grey-custom rounded-xl flex flex-col p-7 grid grid-cols-5">
+        <div class="col-span-5 lg:col-span-3">
+            <p class="text-xl text-center lg:text-start lg:text-2xl font-medium !pt-0">
+                We'd love to hear from you
+            </p>
+
+            <div class="relative h-[45px] mt-5">
+                <input type="text" id="contact_name" class="md-input-styling peer border border-dark-custom h-[45px] !rounded-lg" placeholder=" ">
+                
+                <label for="contact_name" class="floating-label">
+                    Name*
+                </label>
+            </div>
+
+            <div class="relative h-[45px] mt-5">
+                <input type="text" id="contact_email" class="md-input-styling peer border border-dark-custom h-[45px] !rounded-lg" placeholder=" ">
+                
+                <label for="contact_email" class="floating-label">
+                    Email*
+                </label>
+            </div>
+
+            <div class="relative h-[45px] mt-5">
+                <input type="text" id="contact_number" class="md-input-styling peer border border-dark-custom h-[45px] !rounded-lg" placeholder=" ">
+                
+                <label for="contact_number" class="floating-label">
+                    Contact Number
+                </label>
+            </div>
+
+            <select name="residence" id="residence" class="border border-dark-custom h-[45px] !rounded-lg w-full bg-white mt-5">
+                <option value="eastern_cape">Eastern Cape</option>
+                <option value="western_cape">Western Cape</option>
+                <option value="gauteng">Gauteng</option>
+                <option value="kwaZulu_natal">KwaZulu Natal</option>
+            </select>
+
+            <div class="relative w-full mt-5">
+                <textarea id="contact_message" rows="50" class="md-input-styling peer h-42 resize-none w-full" placeholder=" "></textarea>
+
+                <label for="contact_message" class="floating-label-textarea transform-gpu">
+                    Message
+                </label>
+            </div>
+
+            <div class="mt-5">
+                <button type="button" class="btn-checkout-solid lg:!w-[20%]">
+                    Send Message
+                </button>
+            </div>
+        </div>
+
+        <div class="col-span-5 lg:col-span-2 ps-10 hidden lg:block">
+            <div class="bg-white rounded-xl h-full overflow-hidden">
+                <%= image_tag 'card-2.jpg', class: "w-full h-full object-cover" %>
+            </div>
+        </div>
+    </div>
+</div>

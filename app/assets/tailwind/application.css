@@ -311,7 +311,11 @@ body {
         @apply !opacity-100 scale-95 transition-all duration-300
     }
 
-   
+   /* Animation Classes */
+
+   .hover-zoom {
+        @apply hover:scale-110 transition duration-200
+   }
 
 }
   
