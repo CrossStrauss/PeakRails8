@@ -317,5 +317,9 @@ body {
         @apply hover:scale-110 transition duration-200
    }
 
+   .link-anim {
+        @apply hover:text-red-500 transform hover:translate-x-1 transition duration-300 block
+   }
+
 }
   
