@@ -1,0 +1,184 @@
+<div class="page-container">
+    <div class="pb-10 flex items-center flex-col">
+        <h2 class="pod-page-title !mb-0">
+            Returns
+        </h2>
+        <div class="red-accent-pill-large"></div>
+    </div>
+    <div class="lg:pt-10">
+        <div class="grid grid-cols-12 gap-3">
+            <div class="col-span-12 lg:col-span-7 rounded-xl bg-grey-custom p-5 mb-8">
+                <p class="text-xl lg:text-2xl font-medium col-span-1">
+                    Exchange/Return Request For
+                </p>
+                <div class="">
+                    <hr class="col-span-4 my-3">
+                    <form class="w-full">
+                        <div class="grid grid-cols-6 gap-3">
+                            <div class="col-span-8 lg:col-span-3">
+                                <label for="size" class="block mt-3 lg:mt-0 mb-2 text-xl font-medium text-gray-700">
+                                    Product
+                                </label>
+                                <select name="returns" id="returns" class="border border-dark-custom !rounded-lg w-full bg-white">
+                                    <option value="" disabled selected>Please select the product</option>
+                                    <option value="">Agility Peak 5</option>
+                                    <option value="">Agility Peak 6</option>
+                                    <option value="">Agility Peak 7</option>
+                                </select>
+                            </div>
+
+                            <div class="col-span-5 lg:col-span-3">
+                                <label for="size" class="block mt-3 lg:mt-0 mb-2 text-xl font-medium text-gray-700">
+                                    Action
+                                </label>
+                                <select name="returns" id="returns" class="border border-dark-custom !rounded-lg w-full bg-white">
+                                    <option value="" disabled selected>Please Option</option>
+                                    <option value="">Option 1</option>
+                                    <option value="">Option 2</option>
+                                    <option value="">Option 3</option>
+                                </select>
+                            </div>
+
+                            <div class="col-span-3 lg:col-span-1">
+                                <label for="size" class="block mt-3 mb-2 text-xl font-medium text-gray-700">
+                                    Quantity
+                                </label>
+                                <div class="relative">
+                                    <select id="quantity" name="quantity" class="border border-dark-custom !rounded-lg w-full bg-white">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                    </select>
+                                    <div class="absolute left-[50%] bottom-0 border border-dark-custom w-[0px] h-full"></div>
+                                </div>
+                            </div>
+
+                            <div class="col-span-8 lg:col-span-5">
+                                <label for="size" class="block mt-3 mb-2 text-xl font-medium text-gray-700">
+                                    Reason
+                                </label>
+                                <select name="reason" id="reason" class="border border-dark-custom !rounded-lg w-full bg-white">
+                                    <option value="" disabled selected>Select Reason</option>
+                                    <option value="">Reason 1</option>
+                                    <option value="">Reason 2</option>
+                                    <option value="">Reason 3</option>
+                                </select>
+                            </div>
+
+                            <div class="relative col-span-6 mt-3">
+                                <textarea id="standard_waiver" rows="15" class="md-input-styling peer h-32 resize-none w-full" placeholder=" "></textarea>
+
+                                <label for="standard_waiver" class="floating-label-textarea transform-gpu">
+                                    Comment
+                                </label>
+                            </div>
+
+                            <div class="my-3 lg:col-span-2 col-span-8">
+                                <button type="button" class="btn-checkout-solid">
+                                    Refund Another Item
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <hr class="col-span-4 my-3">
+                </div>
+            </div>
+            <div class="col-span-12 lg:col-span-5 rounded-xl bg-grey-custom p-5 mb-8">
+                <div class="col-span-1 rounded-xl bg-grey-custom px-4 py-2 flex flex-col">
+                    <p class="text-xl lg:text-2xl font-medium col-span-1">
+                        Personal Details
+                    </p>
+                    <div class="grid grid-cols-4">
+                        <hr class="col-span-4 my-3">
+                        <div class="col-span-3">
+
+                            <p class="text-lg lg:text-xl">
+                            Personal Details
+                            </p>
+                            <div class="flex flex-row mt-1">
+                                <p class="pe-2">Full name:</p>
+                                <p>Christopher Strauss</p>
+                            </div>
+                            <div class="flex flex-row mt-1">
+                                <p class="pe-2">Email:</p>
+                                <p>chris@email.com</p>
+                            </div>
+                            <div class="flex flex-row mt-1">
+                                <p class="pe-2">Cell:</p>
+                                <p>0824465090</p>
+                            </div>
+
+                            <p class="text-lg lg:text-xl mt-3">
+                                Address
+                            </p>
+                            <div class="flex flex-row items-center">
+                                <p class="mt-2 w-[75%]">
+                                    204 Fordyce Road, Walmer,
+                                    Gqeberha, 6065
+                                </p>
+                                <span class="bg-white uppercase px-3 py-1 rounded-full text-xs">
+                                    residential
+                                </span>
+                            </div>
+                        </div>
+                        <div class="flex justify-end content-start flex-wrap col-span-1">
+                            <a class="text-base text-peak-red text-end cursor-pointer flex">
+                                Change
+                            </a>
+                        </div>
+                        <hr class="col-span-4 my-3">
+                    </div>
+                </div>
+
+                <div class="col-span-1 rounded-xl bg-grey-custom px-4 py-2 flex flex-col">
+                    <p class="text-xl lg:text-2xl font-medium col-span-1">
+                       Edit Personal Details
+                    </p>
+                    <hr class="col-span-4 my-3">
+                    <form class="grid grid-cols-2 gap-3">
+                        <div class="relative h-[45px]">
+                            <input type="text" id="returns_first_name" class="md-input-styling peer border border-dark-custom h-[45px] !rounded-lg" placeholder=" ">
+                            
+                            <label for="returns_first_name" class="floating-label">
+                                First Name
+                            </label>
+                        </div>
+
+                        <div class="relative h-[45px]">
+                            <input type="text" id="returns_last_name" class="md-input-styling peer border border-dark-custom h-[45px] !rounded-lg" placeholder=" ">
+                            
+                            <label for="returns_last_name" class="floating-label">
+                                Last Name
+                            </label>
+                        </div>
+
+                        <div class="relative col-span-2 h-[45px]">
+                            <input type="text" id="returns_cell" class="md-input-styling peer border border-dark-custom h-[45px] !rounded-lg" placeholder=" ">
+                            
+                            <label for="returns_cell" class="floating-label">
+                                Cell Number
+                            </label>
+                        </div>
+
+                        <div class="relative col-span-2 h-[45px]">
+                            <input type="text" id="returns_email" class="md-input-styling peer border border-dark-custom h-[45px] !rounded-lg" placeholder=" ">
+                            
+                            <label for="returns_email" class="floating-label">
+                                Eamil
+                            </label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
